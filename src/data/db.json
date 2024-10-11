@@ -1,0 +1,16 @@
+{
+    "usuarios": [
+      {
+        "nome": "Nicolas",
+        "email": "nicolasjoy@email.com",
+        "id": "37de"
+      },
+      {
+        "id": "0c92",
+        "nome": "Carlos Abraão",
+        "email": "carlins.abrahan@email.com",
+        "senha": "4321",
+        "tipo": "Gerente"
+      }
+    ]
+  }
