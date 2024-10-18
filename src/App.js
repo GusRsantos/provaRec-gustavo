@@ -11,7 +11,7 @@ import Cadastro from "./pages/Cadastro.jsx"
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{backgroundColor: "lightgreen", minHeight:"100vh"}} >
 <BrowserRouter>
 <NavBarra></NavBarra>
 <Routes>

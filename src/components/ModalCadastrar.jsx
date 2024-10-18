@@ -113,9 +113,6 @@ props.onHide();
           </Form.Select>
         </Form.Group>
 
-
-
-
       </Modal.Body>
       <Modal.Footer>
         <Button onClick={handleCadastrar}>Cadastrar</Button>

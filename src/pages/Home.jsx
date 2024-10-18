@@ -2,6 +2,7 @@ import Container from "react-bootstrap/esm/Container";
 import Button from "react-bootstrap/Button";
 import Table from "react-bootstrap/Table";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
+import ModalCadastrar from "../components/ModalCadastrar";
 
 import React, { useState, useEffect } from "react";
 const url = "http://localhost:5000/usuarios";
@@ -14,6 +15,7 @@ const Home = () => {
 const [categoria, setCategoria] = useState("")
   //Lista de usuarios
   const [usuarios, setUsuarios] = useState([])
+
 
   //Resgate de dados da API
   useEffect(() => {
@@ -31,10 +33,6 @@ const [categoria, setCategoria] = useState("")
     fetchData()
 
   }, []);
-
-
-
-
 
   return (
     <div>
@@ -99,7 +97,6 @@ const [categoria, setCategoria] = useState("")
   Editar
 </Button>
 
-
                   <Button variant="danger"
                   
                   onClick={async () => {
@@ -118,6 +115,12 @@ const [categoria, setCategoria] = useState("")
             ))}
           </tbody>
         </Table>
+        <ModalCadastrar
+          show={modalCadastrar}
+          onHide={() => {
+            setModalCadastrar(false);
+          }}
+        />
       </Container>
     </div>
   );

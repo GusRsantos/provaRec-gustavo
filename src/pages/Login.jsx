@@ -8,6 +8,7 @@ import Nav from "react-bootstrap/Nav"
 
 
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const url = "http://localhost:5000/usuarios";
 
@@ -24,7 +25,7 @@ const Login = () => {
 
   //Lista de usuarios
   const [usuarios, setUsuarios] = useState([])
-
+  const navigate = useNavigate();
   //Resgate de dados da API
   useEffect(() => {
 
@@ -52,11 +53,10 @@ const Login = () => {
         if(nome == "admin" && senha == 4321){
           console.log("entrou")
           setAlertaClass("mb-3")       
-          alert("Login efetuado com sucesso !")  
-          setAlertaMensagem("Login efetuado com sucesso !")
+          alert("Login efetuado com sucesso !")
           setAlertaVariant("sucess")
         
-  
+          navigate('./');
 
         }else{
         setAlertaClass("mb-3")
@@ -114,7 +114,7 @@ const Login = () => {
           {alertaMensagem}
         </Alert>
 
-        <Button variant="primary" type="submit">Login</Button>{''}
+        <Button variant="primary" type="submit" >Login</Button>{''}
 
         </form>
 
