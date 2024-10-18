@@ -1,23 +1,28 @@
 {
   "usuarios": [
     {
-      "nome": "Nicolas",
-      "email": "nicolasjoy@email.com",
-      "id": "37de"
+      "id": "c7c2",
+      "nome": "Coca cola 1,5L",
+      "preco": "9,98",
+      "tipo": "Bebida"
     },
     {
-      "id": "0c92",
-      "nome": "Carlos Abraão",
-      "email": "carlins.abrahan@email.com",
-      "senha": "1234",
-      "tipo": "Gerente"
+      "id": "0808",
+      "nome": "peixe pirarocu",
+      "preco": "1,99",
+      "tipo": "Salgado"
     },
     {
-      "id": "1ecd",
-      "nome": "admin",
-      "email": "admin@email.com",
-      "senha": "4321",
-      "tipo": "Administrador"
+      "id": "aea3",
+      "nome": "biscoito baconzitos",
+      "preco": "10,00",
+      "tipo": "Salgado"
+    },
+    {
+      "id": "901f",
+      "nome": "biscoito doritus",
+      "preco": "12,79",
+      "tipo": "Salgado"
     }
   ]
 }
